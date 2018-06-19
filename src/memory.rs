@@ -7,6 +7,7 @@ use std::ffi::{
 };
 use std::os::raw::{
     c_char,
+    c_void,
 };
 
 /// Creates a function with a given `$name` that releases the memory for a type `$t`.

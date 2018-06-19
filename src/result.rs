@@ -89,4 +89,26 @@ impl ExternResult {
     }
 }
 
+impl<T, E> From<Result<T, E>> for ExternResult where E: std::error::Error {
+    fn from(result: Result<T, E>) -> Self {
+        match result {
+            Ok(value) => {
+                ExternResult {
+                    ok: Box::into_raw(Box::new(value)) as *const _ as *const c_void,
+                    err: std::ptr::null(),
+                }
+            },
+            Err(e) => {
+                ExternResult {
+                    ok: std::ptr::null(),
+                    err: Box::into_raw(Box::new(ExternError {
+                        code: ErrorCode::Other,
+                        message: string_to_c_char(e.to_string()),
+                    })),
+                }
+            }
+        }
+    }
+}
+
 define_destructor!(extern_result_destroy, ExternResult);
