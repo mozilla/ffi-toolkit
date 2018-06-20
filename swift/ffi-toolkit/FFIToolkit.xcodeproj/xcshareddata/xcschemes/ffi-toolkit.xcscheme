@@ -17,7 +17,21 @@
                BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
                BuildableName = "ffi_toolkit.framework"
                BlueprintName = "ffi-toolkit"
-               ReferencedContainer = "container:ffi-toolkit.xcodeproj">
+               ReferencedContainer = "container:FFIToolkit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7BEEC39420D95A2A00C04868"
+               BuildableName = "ffi-toolkitTests.xctest"
+               BlueprintName = "ffi-toolkitTests"
+               ReferencedContainer = "container:FFIToolkit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BEEC39420D95A2A00C04868"
-               BuildableName = "ffi-toolkitTests.xctest"
-               BlueprintName = "ffi-toolkitTests"
-               ReferencedContainer = "container:ffi-toolkit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -45,7 +49,7 @@
             BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
             BuildableName = "ffi_toolkit.framework"
             BlueprintName = "ffi-toolkit"
-            ReferencedContainer = "container:ffi-toolkit.xcodeproj">
+            ReferencedContainer = "container:FFIToolkit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,7 +71,7 @@
             BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
             BuildableName = "ffi_toolkit.framework"
             BlueprintName = "ffi-toolkit"
-            ReferencedContainer = "container:ffi-toolkit.xcodeproj">
+            ReferencedContainer = "container:FFIToolkit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,7 +89,7 @@
             BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
             BuildableName = "ffi_toolkit.framework"
             BlueprintName = "ffi-toolkit"
-            ReferencedContainer = "container:ffi-toolkit.xcodeproj">
+            ReferencedContainer = "container:FFIToolkit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
