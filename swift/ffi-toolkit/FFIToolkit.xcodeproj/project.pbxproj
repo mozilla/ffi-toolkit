@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7BEEC39620D95A2A00C04868 /* ffi_toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEC38C20D95A2A00C04868 /* ffi_toolkit.framework */; };
 		7BEEC39B20D95A2A00C04868 /* ffi_toolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEC39A20D95A2A00C04868 /* ffi_toolkitTests.swift */; };
-		7BEEC39D20D95A2A00C04868 /* ffi_toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEEC38F20D95A2A00C04868 /* ffi_toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEEC39D20D95A2A00C04868 /* FFIToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BEEC38F20D95A2A00C04868 /* FFIToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEEC3A720D95C7500C04868 /* Result+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEC3A620D95C7500C04868 /* Result+Unwrap.swift */; };
 		7BEEC3A920D95CAE00C04868 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEC3A820D95CAE00C04868 /* Errors.swift */; };
 		7BEEC3AC20D95EAD00C04868 /* OptionalRustObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEC3AA20D95EAD00C04868 /* OptionalRustObject.swift */; };
@@ -28,9 +28,9 @@
 
 /* Begin PBXFileReference section */
 		7BEEC38C20D95A2A00C04868 /* ffi_toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ffi_toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BEEC38F20D95A2A00C04868 /* ffi_toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi_toolkit.h; sourceTree = "<group>"; };
+		7BEEC38F20D95A2A00C04868 /* FFIToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFIToolkit.h; sourceTree = "<group>"; };
 		7BEEC39020D95A2A00C04868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BEEC39520D95A2A00C04868 /* ffi-toolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ffi-toolkitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEEC39520D95A2A00C04868 /* FFIToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFIToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEEC39A20D95A2A00C04868 /* ffi_toolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ffi_toolkitTests.swift; sourceTree = "<group>"; };
 		7BEEC39C20D95A2A00C04868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BEEC3A620D95C7500C04868 /* Result+Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Unwrap.swift"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				7BEEC38C20D95A2A00C04868 /* ffi_toolkit.framework */,
-				7BEEC39520D95A2A00C04868 /* ffi-toolkitTests.xctest */,
+				7BEEC39520D95A2A00C04868 /* FFIToolkitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			children = (
 				7BEEC3AF20D95EFE00C04868 /* Base */,
 				7BEEC3AE20D95EF500C04868 /* Results */,
-				7BEEC38F20D95A2A00C04868 /* ffi_toolkit.h */,
+				7BEEC38F20D95A2A00C04868 /* FFIToolkit.h */,
 				7BEEC39020D95A2A00C04868 /* Info.plist */,
 			);
 			path = "ffi-toolkit";
@@ -121,16 +121,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEC39D20D95A2A00C04868 /* ffi_toolkit.h in Headers */,
+				7BEEC39D20D95A2A00C04868 /* FFIToolkit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7BEEC38B20D95A2A00C04868 /* ffi-toolkit */ = {
+		7BEEC38B20D95A2A00C04868 /* FFIToolkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEC3A020D95A2A00C04868 /* Build configuration list for PBXNativeTarget "ffi-toolkit" */;
+			buildConfigurationList = 7BEEC3A020D95A2A00C04868 /* Build configuration list for PBXNativeTarget "FFIToolkit" */;
 			buildPhases = (
 				7BEEC38720D95A2A00C04868 /* Sources */,
 				7BEEC38820D95A2A00C04868 /* Frameworks */,
@@ -141,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = "ffi-toolkit";
+			name = FFIToolkit;
 			productName = "ffi-toolkit";
 			productReference = 7BEEC38C20D95A2A00C04868 /* ffi_toolkit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7BEEC39420D95A2A00C04868 /* ffi-toolkitTests */ = {
+		7BEEC39420D95A2A00C04868 /* FFIToolkitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEC3A320D95A2A00C04868 /* Build configuration list for PBXNativeTarget "ffi-toolkitTests" */;
+			buildConfigurationList = 7BEEC3A320D95A2A00C04868 /* Build configuration list for PBXNativeTarget "FFIToolkitTests" */;
 			buildPhases = (
 				7BEEC39120D95A2A00C04868 /* Sources */,
 				7BEEC39220D95A2A00C04868 /* Frameworks */,
@@ -159,9 +159,9 @@
 			dependencies = (
 				7BEEC39820D95A2A00C04868 /* PBXTargetDependency */,
 			);
-			name = "ffi-toolkitTests";
+			name = FFIToolkitTests;
 			productName = "ffi-toolkitTests";
-			productReference = 7BEEC39520D95A2A00C04868 /* ffi-toolkitTests.xctest */;
+			productReference = 7BEEC39520D95A2A00C04868 /* FFIToolkitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -195,8 +195,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BEEC38B20D95A2A00C04868 /* ffi-toolkit */,
-				7BEEC39420D95A2A00C04868 /* ffi-toolkitTests */,
+				7BEEC38B20D95A2A00C04868 /* FFIToolkit */,
+				7BEEC39420D95A2A00C04868 /* FFIToolkitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,7 +243,7 @@
 /* Begin PBXTargetDependency section */
 		7BEEC39820D95A2A00C04868 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7BEEC38B20D95A2A00C04868 /* ffi-toolkit */;
+			target = 7BEEC38B20D95A2A00C04868 /* FFIToolkit */;
 			targetProxy = 7BEEC39720D95A2A00C04868 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BEEC3A020D95A2A00C04868 /* Build configuration list for PBXNativeTarget "ffi-toolkit" */ = {
+		7BEEC3A020D95A2A00C04868 /* Build configuration list for PBXNativeTarget "FFIToolkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BEEC3A120D95A2A00C04868 /* Debug */,
@@ -477,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BEEC3A320D95A2A00C04868 /* Build configuration list for PBXNativeTarget "ffi-toolkitTests" */ = {
+		7BEEC3A320D95A2A00C04868 /* Build configuration list for PBXNativeTarget "FFIToolkitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BEEC3A420D95A2A00C04868 /* Debug */,

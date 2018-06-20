@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
-               BuildableName = "ffi_toolkit.framework"
-               BlueprintName = "ffi-toolkit"
+               BuildableName = "FFIToolkit.framework"
+               BlueprintName = "FFIToolkit"
                ReferencedContainer = "container:FFIToolkit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BEEC39420D95A2A00C04868"
-               BuildableName = "ffi-toolkitTests.xctest"
-               BlueprintName = "ffi-toolkitTests"
+               BuildableName = "FFIToolkitTests.xctest"
+               BlueprintName = "FFIToolkitTests"
                ReferencedContainer = "container:FFIToolkit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
-            BuildableName = "ffi_toolkit.framework"
-            BlueprintName = "ffi-toolkit"
+            BuildableName = "FFIToolkit.framework"
+            BlueprintName = "FFIToolkit"
             ReferencedContainer = "container:FFIToolkit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
-            BuildableName = "ffi_toolkit.framework"
-            BlueprintName = "ffi-toolkit"
+            BuildableName = "FFIToolkit.framework"
+            BlueprintName = "FFIToolkit"
             ReferencedContainer = "container:FFIToolkit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -87,8 +87,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BEEC38B20D95A2A00C04868"
-            BuildableName = "ffi_toolkit.framework"
-            BlueprintName = "ffi-toolkit"
+            BuildableName = "FFIToolkit.framework"
+            BlueprintName = "FFIToolkit"
             ReferencedContainer = "container:FFIToolkit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
