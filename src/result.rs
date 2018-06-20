@@ -30,8 +30,8 @@ pub enum ErrorCode {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExternError {
-    code: ErrorCode,
-    message: *const c_char,
+    pub code: ErrorCode,
+    pub message: *const c_char,
 }
 
 /// A C representation of Rust's [Result](std::result::Result).
