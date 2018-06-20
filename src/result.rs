@@ -72,8 +72,8 @@ impl ExternResult {
 
     pub fn ok_optional<T>(result: &Option<T>) -> *mut Self {
         match result {
-            Some(t) => Self::ok(t),
-            None => Self::ok_null(),
+            Some(v) => ExternResult::ok(v),
+            None => ExternResult::ok_null(),
         }
     }
 
