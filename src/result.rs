@@ -70,7 +70,7 @@ impl ExternResult {
         }))
     }
 
-    pub fn ok_optional<T>(result: &Option<T>) -> *mut Self {
+    pub fn ok_optional<T>(result: Option<T>) -> *mut Self {
         match result {
             Some(v) => ExternResult::ok(v),
             None => ExternResult::ok_null(),
