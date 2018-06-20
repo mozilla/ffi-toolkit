@@ -40,6 +40,14 @@ open class OptionalRustObject: Destroyable {
     public func getRaw() -> OpaquePointer? {
         return self.raw
     }
+    
+    public func consume() {
+        self.raw = nil
+    }
+    
+    public func isConsumed() -> Bool {
+        return self.raw == nil
+    }
 
     deinit {
         guard let raw = self.raw else { return }
