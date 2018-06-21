@@ -41,10 +41,12 @@ macro_rules! define_destructor_with_lifetimes (
 /// destroy function for releasing the memory for boxed `repr(C)` structs.
 define_destructor!(destroy, c_void);
 
+#[no_mangle]
 pub extern "C" fn destroy_raw_uuid(obj: *mut [u8; 16]) {
     let _ = unsafe{ Box::from_raw(obj) };
 }
 
+#[no_mangle]
 pub extern "C" fn destroy_c_char(s: *mut c_char) {
     let _ = unsafe { CString::from_raw(s) };
 }
